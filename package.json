@@ -1,0 +1,22 @@
+{
+  "proxy":"http://localhost:8080/api/v1",
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Expence management system",
+  "main": "app.js",
+  "scripts": {
+    "start":"nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sarang",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  }
+}
