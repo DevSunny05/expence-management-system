@@ -1,7 +1,7 @@
 const userModel=require("../models/user-model")
 
 // login user
-const loginController=async()=>{
+const loginController=async(req,res)=>{
     try {
         const {email,password}=req.body
         const user=await userModel.findOne({email,password});
@@ -13,7 +13,7 @@ const loginController=async()=>{
             success:true,
             user})
     } catch (error) {
-        resizeBy.status(400).json({
+        res.status(400).json({
             success:false,
             error
         })
@@ -21,7 +21,7 @@ const loginController=async()=>{
 }
 
 // register user
-const registerController=async()=>{
+const registerController=async(req,res)=>{
     try {
         const newUser=new userModel(req.body);
         await newUser.save();

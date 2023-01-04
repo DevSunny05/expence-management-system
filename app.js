@@ -25,7 +25,10 @@ mongoose.set('strictQuery', true);
 connectDB()
 
 // routes
+// user routes
 app.use('/api/v1/users',require('./routes/user-route'))
+// transaction routes
+app.use('/api/v1/transactions',require('./routes/transaction-routes'))
 
 // port
 const PORT=8080 || process.env.PORT

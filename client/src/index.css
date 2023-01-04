@@ -1,0 +1,43 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content{
+  height: 80vh;
+}
+
+.register-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.form-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 15px;
+  
+}
+
+.nav-menu{
+  display: flex;
+  gap: 20px;
+  margin-right: 10px;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+/* transaction page */
+.filters{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 0 0 3px 2px gray;
+  border-radius: 2px;
+}
+

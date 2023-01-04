@@ -1,17 +1,20 @@
 {
-  "proxy":"http://localhost:8080/api/v1",
+  
   "name": "backend",
   "version": "1.0.0",
   "description": "Expence management system",
   "main": "app.js",
   "scripts": {
-    "start":"nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "app": "nodemon app.js",
+    "client": "npm start --prefix client",
+    "dev":"concurrently \"npm run app\" \"npm run client\" "
   },
   "author": "sarang",
   "license": "MIT",
   "dependencies": {
     "colors": "^1.4.0",
+    "concurrently": "^7.6.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
