@@ -1,25 +1,61 @@
 {
   
   "name": "backend",
+  
   "version": "1.0.0",
+  
   "description": "Expence management system",
+  
   "main": "app.js",
+  
   "scripts": {
-    "start": "node app.js",
-    "app": "nodemon app.js",
-    "client": "npm start --prefix client",
-    "dev":"concurrently \"npm run app\" \"npm run client\" "
+  
+    
+  "start": "node app.js",
+  
+    
+  "app": "nodemon app.js",
+  
+    
+  "client": "npm start --prefix client",
+  
+    
+  "dev": "concurrently \"npm run app\" \"npm run client\" "
+  
   },
+  
   "author": "sarang",
+  
   "license": "MIT",
+  
   "dependencies": {
-    "colors": "^1.4.0",
-    "concurrently": "^7.6.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "mongoose": "^6.8.2",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.20"
+  
+    
+  "colors": "^1.4.0",
+  
+    
+  "concurrently": "^7.6.0",
+  
+    
+  "cors": "^2.8.5",
+  
+    
+  "dotenv": "^16.0.3",
+  
+    
+  "express": "^4.18.2",
+  
+    
+  "moment": "^2.29.4",
+  
+    
+  "mongoose": "^6.8.2",
+  
+    
+  "morgan": "^1.10.0",
+  
+    
+  "nodemon": "^2.0.20"
+  
   }
 }

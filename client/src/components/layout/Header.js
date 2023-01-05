@@ -20,8 +20,8 @@ const Header = () => {
   }
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
+      <nav className="  navbar navbar-expand-lg bg-body-tertiary">
+        <div className="header-nav container-fluid">
           <button
             className="navbar-toggler"
             type="button"
